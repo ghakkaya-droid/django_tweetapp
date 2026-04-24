@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class tweet(models.Model):
+class Tweet(models.Model):
     nickname=models.CharField(max_length=50)
     message=models.CharField(max_length=100)
 

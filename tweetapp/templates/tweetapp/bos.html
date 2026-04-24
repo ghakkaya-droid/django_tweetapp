@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{%block content%}
+<h1>AddTweetbyForm Page</h1>
+<form action="" method="POST">
+    {% csrf_token %}
+  <div class="row g-5 mt-3">
+        <div class="col-md-2">
+            <div class="mb-2">
+                {{ form.nickname_input.label_tag }}
+            </div>
+            {{ form.nickname_input }}
+        </div>
+
+        <div class="col-md-4">
+            <div class="mb-2">
+                {{ form.message_input.label_tag }}
+            </div>
+            {{ form.message_input}}
+        </div>
+  </div>
+  <button type="submit" class="btn btn-primary mt-3">Send tweet</button>
+</form>
+{%endblock%}
