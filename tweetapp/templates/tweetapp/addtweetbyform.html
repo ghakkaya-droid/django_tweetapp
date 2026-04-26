@@ -10,7 +10,9 @@
 
         {%for field in form%}
         <div class="mb-3">
-            {{field.label_tag}}
+            <strong>{{field.label_tag}}</strong>
+        </div>
+        <div class="mb-3">
             {{field}}
         </div>
         {%endfor%}
