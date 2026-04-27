@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-#jr*ns@#nozj&!)m(s&a-0u!x$)dlmrn8@&&ijiu)q+s2a&k%g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-tweetapp-56uj.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
